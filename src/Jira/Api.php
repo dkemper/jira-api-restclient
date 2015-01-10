@@ -315,8 +315,7 @@ class Api
      */
     public function getVersions($projectKey)
     {
-        $result = $this->api(self::REQUEST_GET, "/rest/api/2/project/{$projectKey}/versions", array(), true);
-        return $result;
+        return $this->api(self::REQUEST_GET, "/rest/api/2/project/{$projectKey}/versions", array(), true);
     }
 
     /**
